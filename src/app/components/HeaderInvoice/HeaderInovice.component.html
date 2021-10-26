@@ -1,0 +1,77 @@
+<div class="zone-invoice__header col">
+  <div class="row">
+    <div class="col-6">
+      <div class="d-inline-flex p-2">
+        <img [src]="Customer.logo" class="img-thumbnail" alt="Invoice Logo">
+      </div>
+
+      <div class="row">
+        <span class="show-from">{{ Customer.from }}</span>
+      </div>
+
+      <div class="row">
+        <table class="show-user-info">
+          <thead>
+            <tr>
+              <th>Bill To:</th>
+              <th>Address:</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>{{ Customer.bill_to }}</td>
+              <td>{{ Customer.address }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="row">
+        <div class="show-title">
+          <h3 class="title">Invoice</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="show-id">
+          <p># {{ Customer.id }}</p>
+        </div>
+      </div>
+
+      <div class="row ">
+        <div class="show-date">
+          <div class="col-8">
+            <div class="date">
+              Date:
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="invoice-date">
+              {{ formatDate(Customer.date) }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="show-balance-due">
+          <div class="col-8">
+            <div class="balance">
+              Balance Due:
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="balance-due">
+              <span>${{ handleSplitNumberWithDot(TotalBalanceDue) }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="zone-invoice__body">
+  <div class="show-table-item">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Rate</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let item of Items.items">
+          <td>{{ item.name }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>${{ item.rate }}</td>
+          <td>${{ handleSplitNumberWithDot(item.quantity * item.rate) }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

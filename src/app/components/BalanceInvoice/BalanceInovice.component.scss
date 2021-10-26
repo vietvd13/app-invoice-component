@@ -1,0 +1,31 @@
+.zone-invoice {
+  &__footer {
+    .show-zone-cal {
+      margin-top: 20px;
+
+      .row {
+        .col-10 {
+          display: flex;
+          width: 100%;
+          justify-content: right;
+
+          p {
+            color: #8D8D8D;
+            font-weight: 500;
+          }
+        }
+
+        .col-2 {
+          display: flex;
+          width: 100%;
+          justify-content: right;
+
+          p {
+            color: #333333;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

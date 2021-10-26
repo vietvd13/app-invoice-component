@@ -1,0 +1,30 @@
+{
+    "note": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim.",
+    "items": [
+        {
+            "name": "Corn - Mini",
+            "quantity": 3,
+            "rate": 40.75
+        },
+        {
+            "name": "Lemonade - Natural, 591 Ml",
+            "quantity": 54,
+            "rate": 40.16
+        },
+        {
+            "name": "Cornstarch",
+            "quantity": 72,
+            "rate": 17.76
+        },
+        {
+            "name": "Longos - Cheese Tortellini",
+            "quantity": 25,
+            "rate": 81.98
+        },
+        {
+            "name": "Veal - Eye Of Round",
+            "quantity": 66,
+            "rate": 53.31
+        }
+    ]    
+}

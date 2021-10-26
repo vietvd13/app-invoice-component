@@ -1,0 +1,16 @@
+.zone-invoice {
+  margin-top: 20px;
+
+  &__footer {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    p.note {
+      color: #8D8D8D;
+    }
+  }
+}
+
+@import './components/HeaderInvoice/HeaderInovice.component.scss';
+@import './components/BodyInvoice/BodyInvoice.component.scss';
+@import './components/BalanceInvoice/BalanceInovice.component.scss';

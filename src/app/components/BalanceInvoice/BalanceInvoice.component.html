@@ -1,0 +1,57 @@
+<div class="zone-invoice__footer">
+  <div class="show-zone-cal">
+    <div class="row">
+      <div class="col-10">
+        <p>Subtotal:</p>
+      </div>
+      <div class="col-2">
+        <p>${{ handleSplitNumberWithDot(TotalAmount) }}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10">
+        <p>Discount (21%):</p>
+      </div>
+      <div class="col-2">
+        <p>${{ handleSplitNumberWithDot(calDiscount()) }}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10">
+        <p>Tax (7%):</p>
+      </div>
+      <div class="col-2">
+        <p>${{ handleSplitNumberWithDot(calTaxAfterDiscout()) }}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10">
+        <p>Shipping</p>
+      </div>
+      <div class="col-2">
+        <p>${{ handleSplitNumberWithDot(formatShipping()) }}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10">
+        <p>Total:</p>
+      </div>
+      <div class="col-2">
+        <p>${{ handleSplitNumberWithDot(calTotal()) }}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10">
+        <p>Amount Paid:</p>
+      </div>
+      <div class="col-2">
+        <p>${{ handleSplitNumberWithDot(formatAmountPaid()) }}</p>
+      </div>
+    </div>
+  </div>
+</div>

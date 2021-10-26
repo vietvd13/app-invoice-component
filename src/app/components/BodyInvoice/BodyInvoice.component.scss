@@ -1,0 +1,44 @@
+.zone-invoice {
+  &__body {
+    margin-top: 50px;
+
+    .show-table-item {
+      table {
+        thead {
+          background-color: #333333;
+
+          th {
+            color: #FFFFFF;
+
+            &:first-child {
+              border-top-left-radius: 5px;
+              border-bottom-left-radius: 5px;
+            }
+
+            &:last-child {
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
+            }
+          }
+        }
+
+        tbody {
+          td {
+            &:nth-child(1) {
+              font-weight: 700;
+              text-align: left;
+            }
+
+            &:not(:nth-child(1)) {
+              font-weight: 500;
+            }
+          }
+        }
+
+        td, th {
+          border: none;
+        }
+      }
+    }
+  }
+}
